@@ -50,6 +50,7 @@ export async function fetchLatestInvoices() {
   }
 }
 
+// This component is to fetch data for the cards on the dashboard.   
 export async function fetchCardData() {
   try {
     // You can probably combine these into a single SQL query
@@ -216,3 +217,4 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error('Failed to fetch customer table.');
   }
 }
+ 
